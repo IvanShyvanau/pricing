@@ -1,0 +1,120 @@
+.pricing{
+  color:$color-text;
+  &-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+  }
+  &-titles{
+    margin-top: 87px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-border{
+      width: 66px;
+      height: 2px;
+      background-color: #6FB048;
+      margin-top: 5px;
+    }
+    &-text{
+      font-size: 1.5rem;
+      margin-top: 19px;
+      width: 60%;
+      text-align: center;
+      line-height: 1.8rem;
+    }
+  } 
+  &-title2{
+   margin: auto;
+   margin-top: 78px;
+  } 
+  &-border2{
+    margin: auto;
+    width: 66px;
+    height: 2px;
+    background-color: #6FB048;
+    margin-top: 29px;
+  }
+  &-plans{
+    display: flex;
+    width: 80%;
+    margin: auto;
+  }
+  &-block{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 39px;
+  }
+  &-content-checkbox{
+    margin-top: 26px;
+    display: flex;
+    align-items: center;
+    width: 75%;
+  }
+  &-logo{
+    margin-top: 54px;
+  }
+  &-text1{
+    margin: auto;
+    margin-top: 26px;
+    @extend %font-title;
+    @include font($height: 1rem, $size: 3.2rem, $weigh: normal);
+    color: $color-primary;
+  }
+  &-border3{
+    width: 66px;
+    height: 2px;
+    background-color: #6FB048;
+    margin-top: 23px;
+  }
+  &-text2{
+    width: 30%;
+    text-align: center;
+    margin-top: 19px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  &-block-link{
+    margin-top: 37px;
+    font-size: 1.8rem;
+    margin-bottom: 96px;
+  }
+  &-link{
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #0F5F5C;
+    &:hover{
+      text-decoration: underline;
+      
+    }
+  }
+}
+#rectangle2{
+  display: none;
+}
+.pseudocheckbox::before {  
+  content: "\00A0";
+  display: inline-block;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  background-color: $color-background2;
+  border: 2px solid #B0B0B0;
+  border-radius: 50%;
+  margin-right: 6px;
+  vertical-align: baseline;
+  cursor: pointer;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: bold;
+  color: #808080;
+}
+input[type=checkbox]:checked + .pseudocheckbox::before { content: "\2713"; }
+

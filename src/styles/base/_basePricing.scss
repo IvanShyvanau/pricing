@@ -1,0 +1,36 @@
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+  
+}
+
+body {
+  @extend %font-text;
+  @include font($height: 1rem, $size: 1.4rem, $weigh: normal);
+}
+
+h1{
+  @extend %font-text;
+  @include font($height: 1.0rem, $size: 3.8rem, $weigh: normal);
+  } 
+
+h2{
+  @extend %font-title;
+  @include font($height: 1rem, $size: 3.2rem, $weigh: normal);
+  } 
+
+h3{
+  @extend %font-title;
+  @include font($height: 1rem, $size: 2.8rem);
+  } 
+
+h3{
+  @extend %font-text;
+  @include font($height: 1rem, $size: 1.5rem);
+  } 
+  
+.container{
+  width: $content-width;
+  margin: auto;
+}
+  

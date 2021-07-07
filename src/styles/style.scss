@@ -1,0 +1,17 @@
+@import "~normalize.css";
+
+
+//abstract
+@import"./abstract/_constantsPricing";
+@import"./abstract/_mixinPricing";
+@import"./abstract/_placeholdersPricing";
+
+//base
+@import"./base/_basePricing";
+
+
+//components  
+@import"./components/_headerPricing";
+@import"./components/_pricingPricing";
+@import"./components/_callToActionPricing";
+@import"./components/_footerPricing";
